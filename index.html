@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bloom Valley Nursery: ShopGallery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- SEO DESCRIPTION -->
+    <meta
+      name="description"
+      content="Bloom Valley Nursery offers the best plants and gardening tips for your home or garden. Discover our gallery and take our PlantFinder quiz!"
+    />
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/gallery/favicon.png" />
+  </head>
+
+  <body>
+    <!-- INFO-BAR -->
+    <div class="info-bar">
+      <p>Monday–Friday: 9 a.m. – 6 p.m. | Saturday–Sunday: 10 a.m. – 5 p.m.</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-content">
+          <a href="./index.html" class="logo" style="cursor: pointer">
+            <img
+              id="logo"
+              src="./images/gallery/logo.png"
+              alt="Bloom Valley Nursery Home Logo"
+            />
+          </a>
+
+          <!-- NAV -->
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-current="home">
+                  Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link" aria-current="about">
+                  About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="quiz.html"
+                  class="nav-link"
+                  aria-current="plantFinderQuiz"
+                >
+                  PlantFinder: Quiz</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="btn-container">
+            <a href="shopGallery.html" class="nav-btn" aria-current="gallery"
+              >Shop Gallery</a
+            >
+            <i class="fa-solid fa-cart-shopping" id="nav-cart"></i>
+            <span class="cart-item-count"></span>
+            <!-- HAMBURGER MENU -->
+            <div class="hamburger" aria-label="Toggle Navigation Menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="home-container">
+      <section id="hero-container">
+        <div class="hero-wrapper">
+          <div class="right-hero">
+            <h4>
+              Holiday Sale <br />
+              Up to 20% off!
+            </h4>
+            <button class="nav-btn seasonal-btn">
+              <a href="./shopGallery.html">Shop Seasonal</a>
+            </button>
+          </div>
+          <div class="left-hero">
+            <div class="top-wrapper"></div>
+            <div class="bottom-wrapper">
+              <div class="learn-more">
+                <h4>
+                  Bloom Valley Nursery: <br />
+                  cultivating growth & sustainability
+                </h4>
+                <a href="./about.html"
+                  ><p style="text-decoration: underline">Learn More</p></a
+                >
+              </div>
+              <img
+                id="birdhouse"
+                src="./images/gallery/Client1_BirdHouse.png"
+                alt="birdhouse"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="bestseller-container">
+        <h2 class="indexh2">Best Seller</h2>
+        <div class="flex-grid">
+          <div class="product-box">
+            <div class="img-box">
+              <img src="images/gallery/Client1_AloePlant.png" alt="aloe plant" />
+            </div>
+            <h2 class="product-title">Aloe Plant</h2>
+            <div class="price-and-cart">
+              <span class="price">$20.00</span>
+              <button class="btn-addToCart">Add to Cart</button>
+            </div>
+          </div>
+  
+          <div class="product-box">
+            <div class="img-box">
+              <img src="images/gallery/Client1_AppleTree.png" alt="apple tree" />
+            </div>
+            <h2 class="product-title">Apple Tree</h2>
+            <div class="price-and-cart">
+              <span class="price">$30.00</span>
+              <button class="btn-addToCart">Add to Cart</button>
+            </div>
+          </div>
+  
+          <div class="product-box">
+            <div class="img-box">
+              <img src="images/gallery/Client1_BirchTree.png" alt="Birch Tree" />
+            </div>
+            <h2 class="product-title">Birch Tree</h2>
+            <div class="price-and-cart">
+              <span class="price">$30.00</span>
+              <button class="btn-addToCart">Add to Cart</button>
+            </div>
+          </div>
+  
+          <div class="product-box">
+            <div class="img-box">
+              <img src="images/gallery/Client1_BirdHouse.png" alt="Bird House" />
+            </div>
+            <h2 class="product-title">Bird House</h2>
+            <div class="price-and-cart">
+              <span class="price">$10.00</span>
+              <button class="btn-addToCart">Add to Cart</button>
+            </div>
+          </div>
+          <button class="nav-btn seasonal-btn">
+            <a href="./shopGallery.html">Shop All Products</a>
+          </button>
+        </div>
+    
+      </section>
+
+      <section id="testimonial-container">
+        <h2 class="indexh2">Client Testimonial</h2>
+        <div class="flex-grid">
+
+          <div class="client-card">
+            <p>"Bloom Valley Nursery has the best selection of native plants and trees. Their customer service is fantastic, and they truly care about helping you find the right plants for your space. Highly recommend!"</p>
+            <div class="flex-center">
+              <h4><em>— Emily T., Eco-Friendly Homeowner</em></h4>
+              <h4>⭐⭐⭐⭐⭐</h4>
+            </div>
+          </div>
+
+          <div class="client-card">
+            <p>"I’ve been shopping at Bloom Valley Nursery for years, and they never disappoint! Their plants are always healthy, and the staff is incredibly knowledgeable. My garden has never looked better!"</p>
+            <div class="flex-center">
+              <h4><em>— Sarah L., Home Gardener</em></h4>
+              <h4>⭐⭐⭐⭐⭐</h4>
+            </div>
+          </div>
+
+          <div class="client-card">
+            <p>"Absolutely love this nursery! I purchased a few fruit trees last spring, and they are thriving beautifully. The team gave me excellent care tips, and I’ll definitely be back for more!"</p>
+            <div class="flex-center">
+              <h4><em>— Mark R., Landscape Designer</em></h4>
+              <h4>⭐⭐⭐⭐⭐</h4>
+            </div>
+          </div>
+
+          <div class="client-card">
+            <p>"I recently bought a Japanese maple from Bloom Valley, and it's stunning! The quality of their trees is top-notch, and the prices are very reasonable. Thank you for making my backyard more beautiful!"</p>
+            <div class="flex-center">
+              <h4><em>— James W., Happy Customer</em></h4>
+              <h4>⭐⭐⭐⭐⭐</h4>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="rewards-container"></section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="index.html" class="logo">
+            <img
+              class="logo-img"
+              src="./images/gallery/logo.png"
+              alt="Bloom Valley Nursery Logo"
+          /></a>
+          <h4 class="footer-h4">Operation Hours</h4>
+          <p class="footer-p">
+            Monday–Friday: <br />
+            9 a.m. – 6 p.m. <br />
+            Saturday–Sunday:<br />
+            10 a.m. – 5 p.m.
+          </p>
+        </div>
+
+        <div class="footer-middle">
+          <ul class="footer-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-current="home">
+                Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" aria-current="about">
+                About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="quiz.html" class="nav-link" aria-current="quiz">
+                PlantFinder: Quiz</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="shopGallery.html"
+                class="nav-link"
+                aria-current="gallery"
+              >
+                Shop Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4 class="footer-h4">Grow Your Roots</h4>
+          <p class="footer-p">
+            Get the latest on new plants, discounts, & more!
+          </p>
+          <form autocomplete="on" action="" class="footer-form">
+            <input id="email" type="email" placeholder="Enter your email" />
+            <input
+              class="sub-btn"
+              type="button"
+              onclick="subscribeButton()"
+              value="Submit"
+            />
+          </form>
+          <div class="footer-social">
+            <a
+              class="social"
+              href="https://facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              class="social"
+              href="https://twitter.com"
+              target="_blank"
+              aria-label="twitter"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              class="social"
+              href="https://instagram.com"
+              target="_blank"
+              aria-label="instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              class="social"
+              href="https://linkedin.com"
+              target="_blank"
+              aria-label="linkedin"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT  -->
+    <script src="script.js"></script>
+  </body>
+</html>

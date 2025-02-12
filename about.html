@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bloom Valley Nursery: About</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- SEO DESCRIPTION -->
+    <meta name="description" content="Bloom Valley Nursery offers the best plants and gardening tips for your home or garden. Discover our gallery and take our PlantFinder quiz!">
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/gallery/favicon.png" />
+  </head>
+
+  <body>
+    <!-- INFO-BAR -->
+    <div class="info-bar">
+      <p>Monday–Friday: 9 a.m. – 6 p.m. | Saturday–Sunday: 10 a.m. – 5 p.m.</p>
+    </div>
+    
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-content">
+          <a href="./index.html" class="logo" style="cursor: pointer;">
+            <img id="logo"
+            src="./images/gallery/logo.png"
+            alt="Bloom Valley Nursery Home Logo"/>
+          </a>
+          <!-- NAV -->
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-current="home"> Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link" aria-current="about"> About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="quiz.html" class="nav-link" aria-current="plantFinderQuiz"> PlantFinder: Quiz</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="btn-container">
+            <a href="shopGallery.html" class="nav-btn" aria-current="gallery">Shop Gallery</a>
+            <i class="fa-solid fa-cart-shopping" id="nav-cart"></i>
+            <!-- HAMBURGER MENU -->
+            <div class="hamburger" aria-label="Toggle Navigation Menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section class="section_our-story">
+        <h1 class="about-h1">Our Story</h1>
+        <div class="about-container">
+          <img id="about-img" src="./images/gallery/Client1_SpiderPlant.png" alt="Bloom Valley Nursery Birch Tree">
+          <div class="about-text">
+            <p class="about-p first-p">Welcome to Bloom Valley Nursery, your local, family-owned plant haven. Nestled in the heart of the community, we specialize in providing a wide variety of plants, trees, and gardening supplies to inspire gardening enthusiasts and homeowners alike.
+            At Bloom Valley Nursery, we share your passion for creating lush, vibrant spaces. Our nursery reflects our commitment to sustainability and creativity, offering high-quality products that support your gardening aspirations.
+            As a cornerstone of the local community, we strive to connect with fellow plant lovers by fostering meaningful engagement and making your gardening journey seamless. From helping you find the perfect plants to answering your questions and processing orders, we’re here to help you bring your green dreams to life. Come give us a visit!</p>
+            <div class="about-hours">
+              <h4 class="footer-h4">🌿 Operation Hours 🌿</h4>
+              <p class="about-p">Monday–Friday:   9 a.m. – 6 p.m. <br>Saturday–Sunday: 10 a.m. – 5 p.m.</p>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+      <section class="section_feedback-form">
+        <h1 class="about-h1">Contact Form</h1>
+        <form autocomplete="on" id="about-form" action="#" method="POST">
+          <label for="feedback-name">Name:</label><br>
+          <input type="text" id="feedback-name" name="feedback-name" placeholder="Jane Doe" required><br><br>
+    
+          <label for="feedback-email">Email:</label><br>
+          <input type="email" id="feedback-email" name="feedback-email" placeholder="JaneDoe@gmail.com" required><br><br>
+    
+          <label for="feedback-subject">Subject:</label><br>
+          <input type="text" id="feedback-subject" name="feedback-subject" placeholder="Re: Product Name" required><br><br>
+
+          <label for="feedback-message">Message:</label><br>
+          <textarea id="feedback-message" name="feedback-message" rows="4" cols="50" placeholder="Write your message here" required></textarea><br><br>
+
+          <input class="feedback-btn sub-btn" type="button" onclick="submitForm()" value="Submit" />
+    
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="index.html" class="logo">
+          <img class="logo-img" src="./images/gallery/logo.png" alt="Bloom Valley Nursery Logo"/></a>
+          <h4 class="footer-h4">Operation Hours</h4>
+          <p class="footer-p">Monday–Friday:  <br> 9 a.m. – 6 p.m. <br> Saturday–Sunday:<br> 10 a.m. – 5 p.m.</p>
+        </div>
+
+        <div class="footer-middle">
+          <ul class="footer-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-current="home"> Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" aria-current="about"> About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="quiz.html" class="nav-link" aria-current="quiz"> PlantFinder: Quiz</a>
+            </li>
+            <li class="nav-item">
+            <a href="shopGallery.html" class="nav-link" aria-current="gallery"> Shop Gallery</a>
+          </li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4 class="footer-h4">Grow Your Roots</h4>
+          <p class="footer-p">Get the latest on new plants, discounts, & more!</p>
+          <form autocomplete="on" action="" class="footer-form">
+            <input id="email" type="email" placeholder="Enter your email">
+            <input class="sub-btn" type="button" onclick="subscribeButton()" value="Submit" />
+          </form>
+          <div class="footer-social">
+            <a class="social" href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a class="social"href="https://twitter.com" target="_blank" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a class="social"href="https://instagram.com" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social"href="https://linkedin.com" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <!-- JAVASCRIPT  -->
+     <script src="script.js"></script>
+  </body>
+</html>

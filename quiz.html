@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bloom Valley Nursery: Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- SEO DESCRIPTION -->
+    <meta name="description" content="Bloom Valley Nursery offers the best plants and gardening tips for your home or garden. Discover our gallery and take our PlantFinder quiz!">
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/gallery/favicon.png" />
+  </head>
+
+  <body>
+    <!-- INFO-BAR -->
+    <div class="info-bar">
+      <p>Monday–Friday: 9 a.m. – 6 p.m. | Saturday–Sunday: 10 a.m. – 5 p.m.</p>
+    </div>
+    
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-container">
+        <div class="header-content">
+          <a href="./index.html" class="logo" style="cursor: pointer;">
+            <img id="logo"
+            src="./images/gallery/logo.png"
+            alt="Bloom Valley Nursery Home Logo"/>
+          </a>
+          <!-- NAV -->
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link" aria-current="home"> Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link" aria-current="about"> About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="quiz.html" class="nav-link" aria-current="plantFinderQuiz"> PlantFinder: Quiz</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="btn-container">
+            <a href="shopGallery.html" class="nav-btn" aria-current="gallery">Shop Gallery</a>
+            <i class="fa-solid fa-cart-shopping" id="nav-cart"></i>
+            <!-- HAMBURGER MENU -->
+            <div class="hamburger" aria-label="Toggle Navigation Menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> 
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="quiz-container">
+            <h1 class="title">Which Plant is Perfect for You?</h1>
+            <p>Take our quick quiz to find your ideal green companion! 🌱</p>
+
+            <div id="question" class="question"></div>
+
+            <label class="option">
+                <input type="radio" name="option" value="1" />
+                <span class="option-text option1"></span>
+            </label>
+            <label class="option">
+                <input type="radio" name="option" value="2" />
+                <span class="option-text option2"></span>
+            </label>
+            <label class="option">
+                <input type="radio" name="option" value="3" />
+                <span class="option-text option3"></span>
+            </label>
+
+            <!-- button -->
+            <!-- <button id="shop-now" class="nav-btn">Shop Now</button> -->
+            <div class="controls">
+            <button class="previous">Previous</button>
+            <button class="next">Next</button>
+            </div>
+        </div>
+
+        <div class="result"></div>  
+      
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="index.html" class="logo">
+          <img class="logo-img" src="./images/gallery/logo.png" alt="Bloom Valley Nursery Logo"/></a>
+          <h4 class="footer-h4">Operation Hours</h4>
+          <p class="footer-p">Monday–Friday:  <br> 9 a.m. – 6 p.m. <br> Saturday–Sunday:<br> 10 a.m. – 5 p.m.</p>
+        </div>
+
+        <div class="footer-middle">
+          <ul class="footer-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-current="home"> Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" aria-current="about"> About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="quiz.html" class="nav-link" aria-current="quiz"> PlantFinder: Quiz</a>
+            </li>
+            <li class="nav-item">
+            <a href="shopGallery.html" class="nav-link" aria-current="gallery"> Shop Gallery</a>
+          </li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4 class="footer-h4">Grow Your Roots</h4>
+          <p class="footer-p">Get the latest on new plants, discounts, & more!</p>
+          <form autocomplete="on" action="" class="footer-form">
+            <input id="email" type="email" placeholder="Enter your email">
+            <input class="sub-btn" type="button" onclick="subscribeButton()" value="Submit" />
+          </form>
+          <div class="footer-social">
+            <a class="social" href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a class="social"href="https://twitter.com" target="_blank" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a class="social"href="https://instagram.com" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social"href="https://linkedin.com" target="_blank" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JAVASCRIPT  -->
+    <script src="script.js"></script>
+    <script>
+      // ********** QUIZ PAGE
+document.addEventListener('DOMContentLoaded', function() {
+  const questions = [
+    {
+      question: 'How much time can you dedicate to plant care?',
+      answer1: 'Minimal – I need a low-maintenance friend.',
+      answer1Total: 1,
+      answer2: 'Moderate – I don’t mind occasional care.',
+      answer2Total: 2,
+      answer3: 'Regular – I love doting on my plants!',
+      answer3Total: 3,
+    },
+    {
+      question: 'Where will your plant live?',
+      answer1: 'A sunny spot with indirect light.',
+      answer1Total: 1,
+      answer2: 'Anywhere – I have versatile spaces.',
+      answer2Total: 2,
+      answer3: 'Somewhere bright and dramatic.',
+      answer3Total: 3,
+    },
+    {
+      question: 'What vibe are you going for?',
+      answer1: 'Practical and useful.',
+      answer1Total: 1,
+      answer2: 'Lush and easygoing.',
+      answer2Total: 2,
+      answer3: 'Unique and stylish.',
+      answer3Total: 3,
+    },
+  ];
+
+  let currentQuestion = 0;
+  let score = [];
+  const totalQuestions = questions.length;
+
+  const container = document.querySelector('.quiz-container');
+  const questionEl = document.querySelector('.question'); 
+  const options = document.querySelectorAll('.option input');
+  const optionTexts = document.querySelectorAll('.option-text');
+  const nextButton = document.querySelector('.next');
+  const previousButton = document.querySelector('.previous');
+  const result = document.querySelector('.result');
+
+  function generateQuestions(index) {
+    const question = questions[index];
+
+    questionEl.innerText = `Question ${index + 1}: ${question.question}`;
+
+    options.forEach((option, i) => {
+      const answerKey = `answer${i + 1}`;
+      const totalKey = `answer${i + 1}Total`;
+
+      optionTexts[i].textContent = question[answerKey];
+      option.value = question[totalKey];
+    });
+  }
+
+  function loadNextQuestion() {
+    const selectedOption = document.querySelector('input[name="option"]:checked');
+
+    if (!selectedOption) {
+      alert('Please select your answer!');
+      return;
+    }
+
+    score.push(Number(selectedOption.value));
+
+    selectedOption.checked = false;
+    currentQuestion++;
+
+    if (currentQuestion === totalQuestions) {
+      showResults();
+      return;
+    }
+
+    generateQuestions(currentQuestion);
+  }
+
+  function loadPreviousQuestion() {
+    if (currentQuestion > 0) {
+      currentQuestion--;
+      score.pop();
+      generateQuestions(currentQuestion);
+    }
+  }
+
+  function showResults() {
+    container.style.display = 'none';
+    const totalScore = score.reduce((total, num) => total + num, 0);
+
+    let plantRecommendation = '';
+
+    if (totalScore >= 9) {
+      plantRecommendation = 'Aloe Vera Plant – A hardy, low-maintenance plant with soothing benefits.';
+    } else if (totalScore >= 6) {
+      plantRecommendation = 'Spider Plant – A resilient and adaptable plant that thrives almost anywhere.';
+    } else {
+      plantRecommendation = 'String of Pearls – A striking and stylish statement piece for any space!';
+    }
+
+    result.innerHTML = `
+      <h1 class="final-score">Your score: ${totalScore}</h1>
+      <p>${plantRecommendation}</p>
+      <div class="controls">
+        <button class="restart">Restart Quiz</button>
+        <a href="shopGallery.html"><button id="shop-now" class="shop-btn">Shop Now</button></a>
+      </div>
+    `;
+
+    document.querySelector('.restart').addEventListener('click', restartQuiz);
+  }
+
+  function restartQuiz() {
+    currentQuestion = 0;
+    score = [];
+    result.innerHTML = '';
+    container.style.display = 'block';
+    generateQuestions(currentQuestion);
+  }
+
+  generateQuestions(currentQuestion);
+  nextButton.addEventListener('click', loadNextQuestion);
+  previousButton.addEventListener('click', loadPreviousQuestion);
+});
+
+    </script>
+  </body>
+</html>
