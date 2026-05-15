@@ -1,6 +1,6 @@
 # Bloom Valley Nursery
 
-A client showcase website for Bloom Valley Nursery - a popup shop that sells seeds, flowers, plants, and fruits at local farmers markets. The site serves as an online presence to showcase their products, share their story, and connect with customers between market days.
+A client showcase website for Bloom Valley Nursery - a popup shop that sells seeds, flowers, plants, and fruits at local farmers markets. The site serves as an online presence to showcase their products, share their story, and connect with customers between market days. The original site is no longer active. The link below showcases the front-end design only, as the backend is no longer running.
 
 View the website here: [ https://ashley062.github.io/bloomvalleynurseryproject/shopGallery.html ]
 
